@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.konasl.endtoendtest.specification.APITestSpec" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-01-26T04:03:07" hostname="K-SABAB-D1" time="0.803">
+  <properties/>
+  <testcase name="(001) Get User Details" classname="com.konasl.endtoendtest.specification.APITestSpec" time="0.498"/>
+  <testcase name="(002) User Login" classname="com.konasl.endtoendtest.specification.APITestSpec" time="0.305"/>
+  <system-out><![CDATA[2021-01-26 10:03:07,525 [Test worker] INFO  com.konasl.endtoendtest.configuration.Configuration -  Load Properties 
+2021-01-26 10:03:07,535 [Test worker] INFO  com.konasl.endtoendtest.specification.APITestSpec -  Setup Spec method executed... 
+2021-01-26 10:03:07,548 [Test worker] INFO  com.konasl.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (001) Get User Details ==============================
+ 
+2021-01-26 10:03:07,696 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
+Request URL: http://10.88.250.92:10010/mobile-platform-1.0/api/user/getUserDetails
+Request data : {"mobileNo":"01599993333"} 
+2021-01-26 10:03:08,036 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
+Response data : {"accountInfo":{"bizCode":"10","interestBearingAccountYn":null,"mobileNo":"01599993333","registeredAt":1560138136852,"userId":91125,"userType":"AG"},"executionStatus":{"statusCodeData":{"message":"","reason":""},"statusType":"EXECUTED_SUCCESS"},"userInfo":{"accessChannels":"101","customerSegment":"BASIC","dateOfBirth":"1998-02-15","name":"Munjur Murshed","photoId":"1123091899","photoIdType":"NID","status":"ACTIVE","trustLevel":1}} 
+2021-01-26 10:03:08,046 [Test worker] INFO  com.konasl.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (002) User Login ==============================
+ 
+2021-01-26 10:03:08,048 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
+Request URL: http://10.88.250.92:20001/api/login
+Request data : {"username":"01521437368","password":"B3282A2F2A28757B3A18AB833DE16A9C54518C0B0CF493E3F0A7CF09386F326A","mpaId":"16115573050055407153522155852177","aspId":"100012345612345"} 
+2021-01-26 10:03:08,349 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
+Response data for user login: {"customerSegment":"BASIC","isInterestBearingAccount":false,"merchantType":null,"operator":"TTALK","profileType":4,"topicList":["ALL","CU","CU_ANDROID","CU_TTALK","ALL_TTALK"],"upgradeProfile":false,"userId":"612341","userType":null} 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

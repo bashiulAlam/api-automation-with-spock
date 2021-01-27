@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.konasl.endtoendtest.specification.APITestSpec</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.konasl.endtoendtest.specification.APITestSpec</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.konasl.endtoendtest.specification.html">com.konasl.endtoendtest.specification</a> &gt; APITestSpec</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.803s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">(001) Get User Details</td>
+<td class="success">0.498s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(002) User Login</td>
+<td class="success">0.305s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-01-26 10:03:07,525 [Test worker] INFO  com.konasl.endtoendtest.configuration.Configuration -  Load Properties 
+2021-01-26 10:03:07,535 [Test worker] INFO  com.konasl.endtoendtest.specification.APITestSpec -  Setup Spec method executed... 
+2021-01-26 10:03:07,548 [Test worker] INFO  com.konasl.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (001) Get User Details ==============================
+ 
+2021-01-26 10:03:07,696 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
+Request URL: http://10.88.250.92:10010/mobile-platform-1.0/api/user/getUserDetails
+Request data : {&quot;mobileNo&quot;:&quot;01599993333&quot;} 
+2021-01-26 10:03:08,036 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
+Response data : {&quot;accountInfo&quot;:{&quot;bizCode&quot;:&quot;10&quot;,&quot;interestBearingAccountYn&quot;:null,&quot;mobileNo&quot;:&quot;01599993333&quot;,&quot;registeredAt&quot;:1560138136852,&quot;userId&quot;:91125,&quot;userType&quot;:&quot;AG&quot;},&quot;executionStatus&quot;:{&quot;statusCodeData&quot;:{&quot;message&quot;:&quot;&quot;,&quot;reason&quot;:&quot;&quot;},&quot;statusType&quot;:&quot;EXECUTED_SUCCESS&quot;},&quot;userInfo&quot;:{&quot;accessChannels&quot;:&quot;101&quot;,&quot;customerSegment&quot;:&quot;BASIC&quot;,&quot;dateOfBirth&quot;:&quot;1998-02-15&quot;,&quot;name&quot;:&quot;Munjur Murshed&quot;,&quot;photoId&quot;:&quot;1123091899&quot;,&quot;photoIdType&quot;:&quot;NID&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;trustLevel&quot;:1}} 
+2021-01-26 10:03:08,046 [Test worker] INFO  com.konasl.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (002) User Login ==============================
+ 
+2021-01-26 10:03:08,048 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
+Request URL: http://10.88.250.92:20001/api/login
+Request data : {&quot;username&quot;:&quot;01521437368&quot;,&quot;password&quot;:&quot;B3282A2F2A28757B3A18AB833DE16A9C54518C0B0CF493E3F0A7CF09386F326A&quot;,&quot;mpaId&quot;:&quot;16115573050055407153522155852177&quot;,&quot;aspId&quot;:&quot;100012345612345&quot;} 
+2021-01-26 10:03:08,349 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
+Response data for user login: {&quot;customerSegment&quot;:&quot;BASIC&quot;,&quot;isInterestBearingAccount&quot;:false,&quot;merchantType&quot;:null,&quot;operator&quot;:&quot;TTALK&quot;,&quot;profileType&quot;:4,&quot;topicList&quot;:[&quot;ALL&quot;,&quot;CU&quot;,&quot;CU_ANDROID&quot;,&quot;CU_TTALK&quot;,&quot;ALL_TTALK&quot;],&quot;upgradeProfile&quot;:false,&quot;userId&quot;:&quot;612341&quot;,&quot;userType&quot;:null} 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.1</a> at Jan 26, 2021 10:03:08 AM</p>
+</div>
+</div>
+</body>
+</html>

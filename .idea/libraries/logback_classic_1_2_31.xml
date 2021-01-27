@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="logback-classic-1.2.31">
+    <CLASSES>
+      <root url="jar://D:/Jar/logback-classic-1.2.3.jar!/" />
+      <root url="jar://D:/Jar/logback-core-1.3.0-alpha5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
