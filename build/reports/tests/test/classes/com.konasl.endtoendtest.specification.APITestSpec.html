@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">2</div>
+<div class="counter">3</div>
 <p>tests</p>
 </div>
 </td>
@@ -35,13 +35,13 @@
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">0</div>
+<div class="counter">2</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.803s</div>
+<div class="counter">0.794s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,7 +50,7 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
+<div class="infoBox skipped" id="successRate">
 <div class="percent">100%</div>
 <p>successful</p>
 </div>
@@ -78,13 +78,18 @@
 </tr>
 </thead>
 <tr>
-<td class="success">(001) Get User Details</td>
-<td class="success">0.498s</td>
-<td class="success">passed</td>
+<td class="skipped">(#scenarioSerial) Get User Details</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
 </tr>
 <tr>
-<td class="success">(002) User Login</td>
-<td class="success">0.305s</td>
+<td class="skipped">(#scenarioSerial) User Login</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="success">(001) Get User Info</td>
+<td class="success">0.794s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,26 +97,17 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2021-01-26 10:03:07,525 [Test worker] INFO  com.konasl.endtoendtest.configuration.Configuration -  Load Properties 
-2021-01-26 10:03:07,535 [Test worker] INFO  com.konasl.endtoendtest.specification.APITestSpec -  Setup Spec method executed... 
-2021-01-26 10:03:07,548 [Test worker] INFO  com.konasl.endtoendtest.specification.APITestSpec -  
+<pre>2021-11-04 19:45:08,190 [Test worker] INFO  com.konasl.endtoendtest.configuration.Configuration -  Load Properties 
+2021-11-04 19:45:08,203 [Test worker] INFO  com.konasl.endtoendtest.specification.APITestSpec -  Setup Spec method executed... 
+2021-11-04 19:45:08,219 [Test worker] INFO  com.konasl.endtoendtest.specification.APITestSpec -  
 
-============================== Scenario - (001) Get User Details ==============================
+============================== Scenario - (001) Get User Info ==============================
  
-2021-01-26 10:03:07,696 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
-Request URL: http://10.88.250.92:10010/mobile-platform-1.0/api/user/getUserDetails
-Request data : {&quot;mobileNo&quot;:&quot;01599993333&quot;} 
-2021-01-26 10:03:08,036 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
-Response data : {&quot;accountInfo&quot;:{&quot;bizCode&quot;:&quot;10&quot;,&quot;interestBearingAccountYn&quot;:null,&quot;mobileNo&quot;:&quot;01599993333&quot;,&quot;registeredAt&quot;:1560138136852,&quot;userId&quot;:91125,&quot;userType&quot;:&quot;AG&quot;},&quot;executionStatus&quot;:{&quot;statusCodeData&quot;:{&quot;message&quot;:&quot;&quot;,&quot;reason&quot;:&quot;&quot;},&quot;statusType&quot;:&quot;EXECUTED_SUCCESS&quot;},&quot;userInfo&quot;:{&quot;accessChannels&quot;:&quot;101&quot;,&quot;customerSegment&quot;:&quot;BASIC&quot;,&quot;dateOfBirth&quot;:&quot;1998-02-15&quot;,&quot;name&quot;:&quot;Munjur Murshed&quot;,&quot;photoId&quot;:&quot;1123091899&quot;,&quot;photoIdType&quot;:&quot;NID&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;trustLevel&quot;:1}} 
-2021-01-26 10:03:08,046 [Test worker] INFO  com.konasl.endtoendtest.specification.APITestSpec -  
-
-============================== Scenario - (002) User Login ==============================
- 
-2021-01-26 10:03:08,048 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
-Request URL: http://10.88.250.92:20001/api/login
-Request data : {&quot;username&quot;:&quot;01521437368&quot;,&quot;password&quot;:&quot;B3282A2F2A28757B3A18AB833DE16A9C54518C0B0CF493E3F0A7CF09386F326A&quot;,&quot;mpaId&quot;:&quot;16115573050055407153522155852177&quot;,&quot;aspId&quot;:&quot;100012345612345&quot;} 
-2021-01-26 10:03:08,349 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
-Response data for user login: {&quot;customerSegment&quot;:&quot;BASIC&quot;,&quot;isInterestBearingAccount&quot;:false,&quot;merchantType&quot;:null,&quot;operator&quot;:&quot;TTALK&quot;,&quot;profileType&quot;:4,&quot;topicList&quot;:[&quot;ALL&quot;,&quot;CU&quot;,&quot;CU_ANDROID&quot;,&quot;CU_TTALK&quot;,&quot;ALL_TTALK&quot;],&quot;upgradeProfile&quot;:false,&quot;userId&quot;:&quot;612341&quot;,&quot;userType&quot;:null} 
+2021-11-04 19:45:08,419 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
+Request URL: https://reqres.in/api/users
+Request data : {&quot;page&quot;:2} 
+2021-11-04 19:45:09,001 [Test worker] INFO  com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper -  
+Response data : {&quot;data&quot;:[{&quot;avatar&quot;:&quot;https://reqres.in/img/faces/7-image.jpg&quot;,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;id&quot;:7,&quot;last_name&quot;:&quot;Lawson&quot;},{&quot;avatar&quot;:&quot;https://reqres.in/img/faces/8-image.jpg&quot;,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;id&quot;:8,&quot;last_name&quot;:&quot;Ferguson&quot;},{&quot;avatar&quot;:&quot;https://reqres.in/img/faces/9-image.jpg&quot;,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;id&quot;:9,&quot;last_name&quot;:&quot;Funke&quot;},{&quot;avatar&quot;:&quot;https://reqres.in/img/faces/10-image.jpg&quot;,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;id&quot;:10,&quot;last_name&quot;:&quot;Fields&quot;},{&quot;avatar&quot;:&quot;https://reqres.in/img/faces/11-image.jpg&quot;,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;id&quot;:11,&quot;last_name&quot;:&quot;Edwards&quot;},{&quot;avatar&quot;:&quot;https://reqres.in/img/faces/12-image.jpg&quot;,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;id&quot;:12,&quot;last_name&quot;:&quot;Howell&quot;}],&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;},&quot;total&quot;:12,&quot;total_pages&quot;:2} 
 </pre>
 </span>
 </div>
@@ -123,7 +119,7 @@ Response data for user login: {&quot;customerSegment&quot;:&quot;BASIC&quot;,&qu
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.1</a> at Jan 26, 2021 10:03:08 AM</p>
+<a href="http://www.gradle.org">Gradle 6.1</a> at Nov 4, 2021 7:45:09 PM</p>
 </div>
 </div>
 </body>

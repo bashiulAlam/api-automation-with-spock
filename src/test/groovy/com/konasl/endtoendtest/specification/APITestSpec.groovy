@@ -1,6 +1,7 @@
 package com.konasl.endtoendtest.specification
 
 import com.konasl.endtoendtest.helper.WalletHelper
+import com.konasl.endtoendtest.httprequesthelper.SampleApiRequestHelper
 import com.konasl.endtoendtest.httprequesthelper.UserRegistrationRequestHelper
 import com.konasl.endtoendtest.model.UserInfo
 import com.konasl.endtoendtest.model.WalletInfo
@@ -13,6 +14,7 @@ import org.junit.Rule
 import org.junit.rules.TestName
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
+import spock.lang.Ignore
 import spock.lang.Shared
 import spock.lang.Specification
 import spock.lang.Unroll
@@ -47,6 +49,7 @@ class APITestSpec extends Specification {
         scenarioSerial = Utils.formatNumber(scenarioCount)
     }
 
+    @Ignore
     @Unroll
     def "(#scenarioSerial) Get User Details"() {
         given: "a register user"
@@ -63,6 +66,7 @@ class APITestSpec extends Specification {
         "01599993333" | "EXECUTED_SUCCESS" | scenarioSerial
     }
 
+    @Ignore
     @Unroll
     def "(#scenarioSerial) User Login"() {
         given: "a registered user"
@@ -91,5 +95,19 @@ class APITestSpec extends Specification {
         userSerial | userId | mpaId | userName | walletPin | responseStatus | scenarioSerial
         0 | "248290" | "16115573050055407153522155852177" | "01521437368" | "B3282A2F2A28757B3A18AB833DE16A9C54518C0B0CF493E3F0A7CF09386F326A" | "EXECUTED_SUCCESS" | scenarioSerial
     }
-    
+
+    @Unroll
+    def "(#scenarioSerial) Get User Info"() {
+        given: "We have users registered"
+
+        when: "We attempt to get user info"
+        def response = SampleApiRequestHelper.getUserInfoByPageNo(pageNo)
+
+        then: "We receive a response"
+        response.data.total != 0
+
+        where: "a set of parameters"
+        pageNo | scenarioSerial
+        2 | scenarioSerial
+    }
 }

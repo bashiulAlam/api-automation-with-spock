@@ -1,20 +1,44 @@
-2021-01-26 10:03:07,525 [Test worker      ] INFO  c.k.endtoendtest.configuration.Configuration  [correlationId=] [mpaId=] [cardId=] [email=] Load Properties 
-2021-01-26 10:03:07,535 [Test worker      ] INFO  c.k.endtoendtest.specification.APITestSpec    [correlationId=] [mpaId=] [cardId=] [email=] Setup Spec method executed... 
-2021-01-26 10:03:07,548 [Test worker      ] INFO  c.k.endtoendtest.specification.APITestSpec    [correlationId=] [mpaId=] [cardId=] [email=] 
+2021-11-04 19:42:43,206 [Test worker      ] INFO  c.k.endtoendtest.configuration.Configuration  [correlationId=] [mpaId=] [cardId=] [email=] Load Properties 
+2021-11-04 19:42:43,221 [Test worker      ] INFO  c.k.endtoendtest.specification.APITestSpec    [correlationId=] [mpaId=] [cardId=] [email=] Setup Spec method executed... 
+2021-11-04 19:42:43,230 [Test worker      ] INFO  c.k.endtoendtest.specification.APITestSpec    [correlationId=] [mpaId=] [cardId=] [email=] 
 
-============================== Scenario - (001) Get User Details ==============================
+============================== Scenario - (001) Get User Info ==============================
  
-2021-01-26 10:03:07,696 [Test worker      ] INFO  c.k.e.h.UserRegistrationRequestHelper         [correlationId=] [mpaId=] [cardId=] [email=] 
-Request URL: http://10.88.250.92:10010/mobile-platform-1.0/api/user/getUserDetails
-Request data : {"mobileNo":"01599993333"} 
-2021-01-26 10:03:08,036 [Test worker      ] INFO  c.k.e.h.UserRegistrationRequestHelper         [correlationId=] [mpaId=] [cardId=] [email=] 
-Response data : {"accountInfo":{"bizCode":"10","interestBearingAccountYn":null,"mobileNo":"01599993333","registeredAt":1560138136852,"userId":91125,"userType":"AG"},"executionStatus":{"statusCodeData":{"message":"","reason":""},"statusType":"EXECUTED_SUCCESS"},"userInfo":{"accessChannels":"101","customerSegment":"BASIC","dateOfBirth":"1998-02-15","name":"Munjur Murshed","photoId":"1123091899","photoIdType":"NID","status":"ACTIVE","trustLevel":1}} 
-2021-01-26 10:03:08,046 [Test worker      ] INFO  c.k.endtoendtest.specification.APITestSpec    [correlationId=] [mpaId=] [cardId=] [email=] 
+2021-11-04 19:42:43,431 [Test worker      ] INFO  c.k.e.h.UserRegistrationRequestHelper         [correlationId=] [mpaId=] [cardId=] [email=] 
+Request URL: https://reqres.in/api/users
+Request data : {"page":2} 
+2021-11-04 19:42:44,374 [Test worker      ] INFO  c.k.e.h.UserRegistrationRequestHelper         [correlationId=] [mpaId=] [cardId=] [email=] 
+Response data : {"data":[{"avatar":"https://reqres.in/img/faces/7-image.jpg","email":"michael.lawson@reqres.in","first_name":"Michael","id":7,"last_name":"Lawson"},{"avatar":"https://reqres.in/img/faces/8-image.jpg","email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","id":8,"last_name":"Ferguson"},{"avatar":"https://reqres.in/img/faces/9-image.jpg","email":"tobias.funke@reqres.in","first_name":"Tobias","id":9,"last_name":"Funke"},{"avatar":"https://reqres.in/img/faces/10-image.jpg","email":"byron.fields@reqres.in","first_name":"Byron","id":10,"last_name":"Fields"},{"avatar":"https://reqres.in/img/faces/11-image.jpg","email":"george.edwards@reqres.in","first_name":"George","id":11,"last_name":"Edwards"},{"avatar":"https://reqres.in/img/faces/12-image.jpg","email":"rachel.howell@reqres.in","first_name":"Rachel","id":12,"last_name":"Howell"}],"page":2,"per_page":6,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https://reqres.in/#support-heading"},"total":12,"total_pages":2} 
+2021-11-04 19:43:25,874 [Test worker      ] INFO  c.k.endtoendtest.configuration.Configuration  [correlationId=] [mpaId=] [cardId=] [email=] Load Properties 
+2021-11-04 19:43:25,893 [Test worker      ] INFO  c.k.endtoendtest.specification.APITestSpec    [correlationId=] [mpaId=] [cardId=] [email=] Setup Spec method executed... 
+2021-11-04 19:43:25,908 [Test worker      ] INFO  c.k.endtoendtest.specification.APITestSpec    [correlationId=] [mpaId=] [cardId=] [email=] 
 
-============================== Scenario - (002) User Login ==============================
+============================== Scenario - (001) Get User Info ==============================
  
-2021-01-26 10:03:08,048 [Test worker      ] INFO  c.k.e.h.UserRegistrationRequestHelper         [correlationId=] [mpaId=] [cardId=] [email=] 
-Request URL: http://10.88.250.92:20001/api/login
-Request data : {"username":"01521437368","password":"B3282A2F2A28757B3A18AB833DE16A9C54518C0B0CF493E3F0A7CF09386F326A","mpaId":"16115573050055407153522155852177","aspId":"100012345612345"} 
-2021-01-26 10:03:08,349 [Test worker      ] INFO  c.k.e.h.UserRegistrationRequestHelper         [correlationId=] [mpaId=] [cardId=] [email=] 
-Response data for user login: {"customerSegment":"BASIC","isInterestBearingAccount":false,"merchantType":null,"operator":"TTALK","profileType":4,"topicList":["ALL","CU","CU_ANDROID","CU_TTALK","ALL_TTALK"],"upgradeProfile":false,"userId":"612341","userType":null} 
+2021-11-04 19:43:26,141 [Test worker      ] INFO  c.k.e.h.UserRegistrationRequestHelper         [correlationId=] [mpaId=] [cardId=] [email=] 
+Request URL: https://reqres.in/api/users
+Request data : {"page":2} 
+2021-11-04 19:43:26,777 [Test worker      ] INFO  c.k.e.h.UserRegistrationRequestHelper         [correlationId=] [mpaId=] [cardId=] [email=] 
+Response data : {"data":[{"avatar":"https://reqres.in/img/faces/7-image.jpg","email":"michael.lawson@reqres.in","first_name":"Michael","id":7,"last_name":"Lawson"},{"avatar":"https://reqres.in/img/faces/8-image.jpg","email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","id":8,"last_name":"Ferguson"},{"avatar":"https://reqres.in/img/faces/9-image.jpg","email":"tobias.funke@reqres.in","first_name":"Tobias","id":9,"last_name":"Funke"},{"avatar":"https://reqres.in/img/faces/10-image.jpg","email":"byron.fields@reqres.in","first_name":"Byron","id":10,"last_name":"Fields"},{"avatar":"https://reqres.in/img/faces/11-image.jpg","email":"george.edwards@reqres.in","first_name":"George","id":11,"last_name":"Edwards"},{"avatar":"https://reqres.in/img/faces/12-image.jpg","email":"rachel.howell@reqres.in","first_name":"Rachel","id":12,"last_name":"Howell"}],"page":2,"per_page":6,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https://reqres.in/#support-heading"},"total":12,"total_pages":2} 
+2021-11-04 19:44:26,000 [Test worker      ] INFO  c.k.endtoendtest.configuration.Configuration  [correlationId=] [mpaId=] [cardId=] [email=] Load Properties 
+2021-11-04 19:44:26,013 [Test worker      ] INFO  c.k.endtoendtest.specification.APITestSpec    [correlationId=] [mpaId=] [cardId=] [email=] Setup Spec method executed... 
+2021-11-04 19:44:26,028 [Test worker      ] INFO  c.k.endtoendtest.specification.APITestSpec    [correlationId=] [mpaId=] [cardId=] [email=] 
+
+============================== Scenario - (001) Get User Info ==============================
+ 
+2021-11-04 19:44:26,216 [Test worker      ] INFO  c.k.e.h.UserRegistrationRequestHelper         [correlationId=] [mpaId=] [cardId=] [email=] 
+Request URL: https://reqres.in/api/users
+Request data : {"page":2} 
+2021-11-04 19:44:31,075 [Test worker      ] INFO  c.k.e.h.UserRegistrationRequestHelper         [correlationId=] [mpaId=] [cardId=] [email=] 
+Response data : {"data":[{"avatar":"https://reqres.in/img/faces/7-image.jpg","email":"michael.lawson@reqres.in","first_name":"Michael","id":7,"last_name":"Lawson"},{"avatar":"https://reqres.in/img/faces/8-image.jpg","email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","id":8,"last_name":"Ferguson"},{"avatar":"https://reqres.in/img/faces/9-image.jpg","email":"tobias.funke@reqres.in","first_name":"Tobias","id":9,"last_name":"Funke"},{"avatar":"https://reqres.in/img/faces/10-image.jpg","email":"byron.fields@reqres.in","first_name":"Byron","id":10,"last_name":"Fields"},{"avatar":"https://reqres.in/img/faces/11-image.jpg","email":"george.edwards@reqres.in","first_name":"George","id":11,"last_name":"Edwards"},{"avatar":"https://reqres.in/img/faces/12-image.jpg","email":"rachel.howell@reqres.in","first_name":"Rachel","id":12,"last_name":"Howell"}],"page":2,"per_page":6,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https://reqres.in/#support-heading"},"total":12,"total_pages":2} 
+2021-11-04 19:45:08,190 [Test worker      ] INFO  c.k.endtoendtest.configuration.Configuration  [correlationId=] [mpaId=] [cardId=] [email=] Load Properties 
+2021-11-04 19:45:08,203 [Test worker      ] INFO  c.k.endtoendtest.specification.APITestSpec    [correlationId=] [mpaId=] [cardId=] [email=] Setup Spec method executed... 
+2021-11-04 19:45:08,219 [Test worker      ] INFO  c.k.endtoendtest.specification.APITestSpec    [correlationId=] [mpaId=] [cardId=] [email=] 
+
+============================== Scenario - (001) Get User Info ==============================
+ 
+2021-11-04 19:45:08,419 [Test worker      ] INFO  c.k.e.h.UserRegistrationRequestHelper         [correlationId=] [mpaId=] [cardId=] [email=] 
+Request URL: https://reqres.in/api/users
+Request data : {"page":2} 
+2021-11-04 19:45:09,001 [Test worker      ] INFO  c.k.e.h.UserRegistrationRequestHelper         [correlationId=] [mpaId=] [cardId=] [email=] 
+Response data : {"data":[{"avatar":"https://reqres.in/img/faces/7-image.jpg","email":"michael.lawson@reqres.in","first_name":"Michael","id":7,"last_name":"Lawson"},{"avatar":"https://reqres.in/img/faces/8-image.jpg","email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","id":8,"last_name":"Ferguson"},{"avatar":"https://reqres.in/img/faces/9-image.jpg","email":"tobias.funke@reqres.in","first_name":"Tobias","id":9,"last_name":"Funke"},{"avatar":"https://reqres.in/img/faces/10-image.jpg","email":"byron.fields@reqres.in","first_name":"Byron","id":10,"last_name":"Fields"},{"avatar":"https://reqres.in/img/faces/11-image.jpg","email":"george.edwards@reqres.in","first_name":"George","id":11,"last_name":"Edwards"},{"avatar":"https://reqres.in/img/faces/12-image.jpg","email":"rachel.howell@reqres.in","first_name":"Rachel","id":12,"last_name":"Howell"}],"page":2,"per_page":6,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https://reqres.in/#support-heading"},"total":12,"total_pages":2} 

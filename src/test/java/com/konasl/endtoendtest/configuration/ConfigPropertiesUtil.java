@@ -20,7 +20,7 @@ public class ConfigPropertiesUtil {
         static final String LOCALE = "LOCALE";
         static final String USER_AGENT = "USER_AGENT";
 
-        static final String SERVER_IP = "DFS_QA_IP";
+        static final String SERVER_IP = "SAMPLE_IP";
 
         static final String APIGW_PORT = "APIGW_PORT";
         static final String MAP_PORT = "MAP_PORT";
