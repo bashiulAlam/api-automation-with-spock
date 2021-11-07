@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.assignment.endtoendtest.specification.APITestSpec</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.assignment.endtoendtest.specification.APITestSpec</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.assignment.endtoendtest.specification.html">com.assignment.endtoendtest.specification</a> &gt; APITestSpec</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">14</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">6.645s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">85%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="(003) Get Directions"></a>
+<h3 class="failures">(003) Get Directions</h3>
+<span class="code">
+<pre>java.lang.NullPointerException: Cannot invoke method parse() on null object
+	at com.assignment.endtoendtest.specification.APITestSpec.(#scenarioSerial) Get Directions(APITestSpec.groovy:44)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="(014) Geolocate"></a>
+<h3 class="failures">(014) Geolocate</h3>
+<span class="code">
+<pre>java.lang.NullPointerException: Cannot invoke method statusCode() on null object
+	at com.assignment.endtoendtest.specification.APITestSpec.(#scenarioSerial) Geolocate(APITestSpec.groovy:93)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">(001) Get Directions</td>
+<td class="success">1.174s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(002) Get Directions</td>
+<td class="success">0.345s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">(003) Get Directions</td>
+<td class="failures">0.259s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">(004) Get Directions</td>
+<td class="success">0.226s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(005) Get Directions</td>
+<td class="success">0.254s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(006) Get Directions</td>
+<td class="success">0.850s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(007) Get Directions</td>
+<td class="success">0.332s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(008) Get Place From Text</td>
+<td class="success">0.611s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(009) Get Place From Text</td>
+<td class="success">0.536s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(010) Get Place From Text</td>
+<td class="success">0.579s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(011) Get Place From Text</td>
+<td class="success">0.542s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(012) Get Place From Text</td>
+<td class="success">0.436s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(013) Get Place From Text</td>
+<td class="success">0.364s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">(014) Geolocate</td>
+<td class="failures">0.137s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-11-07 13:48:15,568 [Test worker] ERROR com.assignment.endtoendtest.specification.APITestSpec -  Exception occurred : HTTP error fetching URL. Status=400, URL=[https://maps.googleapis.com/maps/api/directions/json?key=AIzaSyAN1hR5ma5FORlM1Paz4pDYbFtSgRjz2z4&amp;destination=ChIJgWsCh7C4VTcRwgRZ3btjpY8&amp;origin=ChIJMdA4aqnv-zkREPTWDpU6-RA]
+Stack trace for the exception: [org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:890), org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:829), org.jsoup.helper.HttpConnection.execute(HttpConnection.java:366), org.jsoup.Connection$execute$2.call(Unknown Source), com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper.getDirections(GoogleApiRequestHelper.groovy:36), com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper$getDirections.call(Unknown Source), com.assignment.endtoendtest.specification.APITestSpec.$spock_feature_0_0(APITestSpec.groovy:43), sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method), sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62), sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.lang.reflect.Method.invoke(Method.java:498), org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:153), org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:84), org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:480), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:463), org.spockframework.runtime.BaseSpecRunner.runFeatureMethod(BaseSpecRunner.java:405), org.spockframework.runtime.BaseSpecRunner.doRunIteration(BaseSpecRunner.java:324), org.spockframework.runtime.BaseSpecRunner$6.invoke(BaseSpecRunner.java:309), org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:88), org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37), org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55), org.spockframework.runtime.extension.builtin.TestRuleInterceptor.intercept(TestRuleInterceptor.java:38), org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:87), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:471), org.spockframework.runtime.BaseSpecRunner.runIteration(BaseSpecRunner.java:288), org.spockframework.runtime.BaseSpecRunner.initializeAndRunIteration(BaseSpecRunner.java:278), org.spockframework.runtime.ParameterizedSpecRunner.runIterations(ParameterizedSpecRunner.java:119), org.spockframework.runtime.ParameterizedSpecRunner.runParameterizedFeature(ParameterizedSpecRunner.java:43), org.spockframework.runtime.BaseSpecRunner.doRunFeature(BaseSpecRunner.java:262), org.spockframework.runtime.BaseSpecRunner$5.invoke(BaseSpecRunner.java:246), org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:480), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:463), org.spockframework.runtime.BaseSpecRunner.runFeature(BaseSpecRunner.java:238), org.spockframework.runtime.BaseSpecRunner.runFeatures(BaseSpecRunner.java:188), org.spockframework.runtime.BaseSpecRunner.doRunSpec(BaseSpecRunner.java:98), org.spockframework.runtime.BaseSpecRunner$1.invoke(BaseSpecRunner.java:84), org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:480), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:463), org.spockframework.runtime.BaseSpecRunner.runSpec(BaseSpecRunner.java:76), org.spockframework.runtime.BaseSpecRunner.run(BaseSpecRunner.java:67), org.spockframework.runtime.Sputnik.run(Sputnik.java:63), org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110), org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58), org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38), org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62), org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51), sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method), sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62), sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.lang.reflect.Method.invoke(Method.java:498), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24), org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33), org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94), com.sun.proxy.$Proxy2.processTestClass(Unknown Source), org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118), sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method), sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62), sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.lang.reflect.Method.invoke(Method.java:498), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24), org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182), org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164), org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412), org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64), org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56), java.lang.Thread.run(Thread.java:748)] 
+2021-11-07 13:48:20,462 [Test worker] ERROR com.assignment.endtoendtest.specification.APITestSpec -  Exception occurred : HTTP error fetching URL. Status=404, URL=[https://maps.googleapis.com/geolocation/v1/geolocate]
+Stack trace for the exception: [org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:890), org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:829), org.jsoup.helper.HttpConnection.execute(HttpConnection.java:366), org.jsoup.Connection$execute$2.call(Unknown Source), org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45), org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:110), org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:114), com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper.geolocate(GoogleApiRequestHelper.groovy:97), com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper$geolocate$1.call(Unknown Source), org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45), org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:110), org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:114), com.assignment.endtoendtest.specification.APITestSpec.$spock_feature_0_2(APITestSpec.groovy:92), sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method), sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62), sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.lang.reflect.Method.invoke(Method.java:498), org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:153), org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:84), org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:480), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:463), org.spockframework.runtime.BaseSpecRunner.runFeatureMethod(BaseSpecRunner.java:405), org.spockframework.runtime.BaseSpecRunner.doRunIteration(BaseSpecRunner.java:324), org.spockframework.runtime.BaseSpecRunner$6.invoke(BaseSpecRunner.java:309), org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:88), org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37), org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55), org.spockframework.runtime.extension.builtin.TestRuleInterceptor.intercept(TestRuleInterceptor.java:38), org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:87), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:471), org.spockframework.runtime.BaseSpecRunner.runIteration(BaseSpecRunner.java:288), org.spockframework.runtime.BaseSpecRunner.initializeAndRunIteration(BaseSpecRunner.java:278), org.spockframework.runtime.ParameterizedSpecRunner.runIterations(ParameterizedSpecRunner.java:119), org.spockframework.runtime.ParameterizedSpecRunner.runParameterizedFeature(ParameterizedSpecRunner.java:43), org.spockframework.runtime.BaseSpecRunner.doRunFeature(BaseSpecRunner.java:262), org.spockframework.runtime.BaseSpecRunner$5.invoke(BaseSpecRunner.java:246), org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:480), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:463), org.spockframework.runtime.BaseSpecRunner.runFeature(BaseSpecRunner.java:238), org.spockframework.runtime.BaseSpecRunner.runFeatures(BaseSpecRunner.java:188), org.spockframework.runtime.BaseSpecRunner.doRunSpec(BaseSpecRunner.java:98), org.spockframework.runtime.BaseSpecRunner$1.invoke(BaseSpecRunner.java:84), org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:480), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:463), org.spockframework.runtime.BaseSpecRunner.runSpec(BaseSpecRunner.java:76), org.spockframework.runtime.BaseSpecRunner.run(BaseSpecRunner.java:67), org.spockframework.runtime.Sputnik.run(Sputnik.java:63), org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110), org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58), org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38), org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62), org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51), sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method), sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62), sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.lang.reflect.Method.invoke(Method.java:498), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24), org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33), org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94), com.sun.proxy.$Proxy2.processTestClass(Unknown Source), org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118), sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method), sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62), sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.lang.reflect.Method.invoke(Method.java:498), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24), org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182), org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164), org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412), org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64), org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56), java.lang.Thread.run(Thread.java:748)] 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.1</a> at Nov 7, 2021 1:48:20 PM</p>
+</div>
+</div>
+</body>
+</html>

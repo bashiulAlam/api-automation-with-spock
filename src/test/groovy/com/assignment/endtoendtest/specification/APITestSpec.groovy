@@ -11,6 +11,7 @@ import org.junit.Rule
 import org.junit.rules.TestName
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
+import spock.lang.Ignore
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -50,13 +51,13 @@ class APITestSpec extends Specification {
 
         where: "a set of parameters"
         destination                   | origin                        | statusCode | scenarioSerial
-        "Victoria, BC"                | "Vancouver, BC"               | 200        | scenarioSerial
+        "Victoria, BC"                | "Vancouver, BC"               | 200        | Utils.formatNumber(scenarioCount)
         "38.5, -75"                   | "38.8951, -77.0364"           | 200        | Utils.formatNumber(scenarioCount + 1)
-        "ChIJgWsCh7C4VTcRwgRZ3btjpY8" | "ChIJMdA4aqnv-zkREPTWDpU6-RA" | 400        | scenarioSerial
-        "QCF8+7C Dhaka"               | "Q965+G4 Dhaka"               | 200        | scenarioSerial
-        "QCF8+7C Dhaka"               | "SARA M Square"               | 200        | scenarioSerial
-        "Victoria, BC"                | "SARA M Square"               | 200        | scenarioSerial
-        "38.5, -75"                   | "SARA M Square"               | 200        | scenarioSerial
+        "ChIJgWsCh7C4VTcRwgRZ3btjpY8" | "ChIJMdA4aqnv-zkREPTWDpU6-RA" | 400        | Utils.formatNumber(scenarioCount + 2)
+        "QCF8+7C Dhaka"               | "Q965+G4 Dhaka"               | 200        | Utils.formatNumber(scenarioCount + 3)
+        "QCF8+7C Dhaka"               | "SARA M Square"               | 200        | Utils.formatNumber(scenarioCount + 4)
+        "Victoria, BC"                | "SARA M Square"               | 200        | Utils.formatNumber(scenarioCount + 5)
+        "38.5, -75"                   | "SARA M Square"               | 200        | Utils.formatNumber(scenarioCount + 6)
     }
 
     @Unroll
@@ -75,12 +76,12 @@ class APITestSpec extends Specification {
 
         where: "a set of parameters"
         place                                     | statusCode | scenarioSerial
-        "SARA M Square"                           | 200        | scenarioSerial
+        "SARA M Square"                           | 200        | Utils.formatNumber(scenarioCount)
         "Q965+G4 Dhaka"                           | 200        | Utils.formatNumber(scenarioCount + 1)
-        "House # 55/2 & 58, Rd No. 2, Dhaka 1207" | 200        | scenarioSerial
-        "+8801847214963"                          | 200        | scenarioSerial
-        "ChIJMdA4aqnv-zkREPTWDpU6-RA"             | 200        | scenarioSerial
-        "+88027911042"                            | 200        | scenarioSerial
+        "House # 55/2 & 58, Rd No. 2, Dhaka 1207" | 200        | Utils.formatNumber(scenarioCount + 2)
+        "+8801847214963"                          | 200        | Utils.formatNumber(scenarioCount + 3)
+        "ChIJMdA4aqnv-zkREPTWDpU6-RA"             | 200        | Utils.formatNumber(scenarioCount + 4)
+        "+88027911042"                            | 200        | Utils.formatNumber(scenarioCount + 5)
     }
 
     @Unroll
