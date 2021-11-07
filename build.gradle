@@ -20,4 +20,5 @@ dependencies {
     compile "org.codehaus.gpars:gpars:1.2.1"
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.28'
     testCompile group: 'ch.qos.logback', name: 'logback-classic', version: '0.9.26'
+    implementation 'org.jsoup:jsoup:1.14.3'
 }
