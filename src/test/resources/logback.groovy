@@ -27,5 +27,5 @@ appender("FILE", RollingFileAppender) {
         pattern = "%date [%-17thread] %-5level %-45logger{45} [correlationId=%X{correlationId}] [mpaId=%X{mpaId}] [cardId=%X{cardId}] [email=%X{email}] %msg %n"
     }
 }
-logger("com.konasl.endtoendtest", TRACE, ["FILE"])
+logger("com.assignment.endtoendtest", TRACE, ["FILE"])
 root(WARN, ["CONSOLE"])

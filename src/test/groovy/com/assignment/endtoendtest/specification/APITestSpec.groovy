@@ -5,6 +5,7 @@ import com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper
 import com.assignment.endtoendtest.utils.Utils
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
+import net.sf.json.JSONObject
 import org.jsoup.Connection
 import org.jsoup.nodes.Document
 import org.junit.Rule
@@ -70,6 +71,9 @@ class APITestSpec extends Specification {
         logger.info("Response data : " + document.toString())
         logger.info("Json body data : " + JsonOutput.toJson(document.body().text()))
         logger.info("Status code : " + response.statusCode())
+
+        def jsonBody = jsonSlurper.parseText(document.body().text())
+        logger.info("status : " + jsonBody.status)
 
         then: "We receive a response"
         response.statusCode() == statusCode
