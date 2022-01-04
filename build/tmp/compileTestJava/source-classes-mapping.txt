@@ -1,16 +1,16 @@
-com/konasl/endtoendtest/configuration/ConfigPropertiesUtil.java
- com.konasl.endtoendtest.configuration.ConfigPropertiesUtil
- com.konasl.endtoendtest.configuration.ConfigPropertiesUtil$ConfigElements
-com/konasl/endtoendtest/utils/Constants.java
- com.konasl.endtoendtest.utils.Constants
- com.konasl.endtoendtest.utils.Constants$TokenType
-com/konasl/endtoendtest/utils/HeaderBuilder.java
- com.konasl.endtoendtest.utils.HeaderBuilder
-com/konasl/endtoendtest/utils/Utils.java
- com.konasl.endtoendtest.utils.Utils
-com/konasl/endtoendtest/utils/RequestCorrelation.java
- com.konasl.endtoendtest.utils.RequestCorrelation
-com/konasl/endtoendtest/endpoints/MAPEndPoints.java
- com.konasl.endtoendtest.endpoints.MAPEndPoints
-com/konasl/endtoendtest/configuration/Configuration.java
- com.konasl.endtoendtest.configuration.Configuration
+com/assignment/endtoendtest/configuration/ConfigPropertiesUtil.java
+ com.assignment.endtoendtest.configuration.ConfigPropertiesUtil
+ com.assignment.endtoendtest.configuration.ConfigPropertiesUtil$ConfigElements
+com/assignment/endtoendtest/configuration/Configuration.java
+ com.assignment.endtoendtest.configuration.Configuration
+com/assignment/endtoendtest/utils/HeaderBuilder.java
+ com.assignment.endtoendtest.utils.HeaderBuilder
+com/assignment/endtoendtest/utils/Constants.java
+ com.assignment.endtoendtest.utils.Constants
+ com.assignment.endtoendtest.utils.Constants$TokenType
+com/assignment/endtoendtest/utils/RequestCorrelation.java
+ com.assignment.endtoendtest.utils.RequestCorrelation
+com/assignment/endtoendtest/endpoints/ApiEndPoints.java
+ com.assignment.endtoendtest.endpoints.ApiEndPoints
+com/assignment/endtoendtest/utils/Utils.java
+ com.assignment.endtoendtest.utils.Utils

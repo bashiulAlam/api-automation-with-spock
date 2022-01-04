@@ -7,6 +7,7 @@ import com.assignment.endtoendtest.utils.Constants
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 import groovyx.net.http.RESTClient
+import jodd.json.JsonSerializer
 import org.jsoup.Connection
 import org.jsoup.Jsoup
 import org.slf4j.Logger
@@ -31,7 +32,8 @@ class GoogleApiRequestHelper {
                     origin     : origin
             ]
 
-            logger.info("\nRequest URL: " + path + "\nRequest data : " + JsonOutput.toJson(request))
+//            logger.info("\nRequest URL: " + path + "\nRequest data : " + JsonOutput.toJson(request))
+            logger.info("\nRequest URL: " + path + "\nRequest data : " + JsonSerializer.create().serialize(request))
 
             response = Jsoup.connect(path)
                     .ignoreContentType(true)
@@ -59,7 +61,8 @@ class GoogleApiRequestHelper {
                     fields   : "formatted_address,name"
             ]
 
-            logger.info("\nRequest URL: " + path + "\nRequest data : " + JsonOutput.toJson(request))
+            //logger.info("\nRequest URL: " + path + "\nRequest data : " + JsonOutput.toJson(request))
+            logger.info("\nRequest URL: " + path + "\nRequest data : " + JsonSerializer.create().serialize(request))
 
             response = Jsoup.connect(path)
                     .ignoreContentType(true)
@@ -92,7 +95,8 @@ class GoogleApiRequestHelper {
                     "wifiAccessPoints": wifiAccessPoints
             ]
 
-            logger.info("\nRequest URL: " + path + "\nRequest data : " + JsonOutput.toJson(request))
+            //logger.info("\nRequest URL: " + path + "\nRequest data : " + JsonOutput.toJson(request))
+            logger.info("\nRequest URL: " + path + "\nRequest data : " + JsonSerializer.create().serialize(request))
 
             response = Jsoup.connect(path)
                     .ignoreContentType(true)

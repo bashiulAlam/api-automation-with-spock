@@ -32,7 +32,7 @@ public class Configuration {
         InputStream inputStream = Configuration.class.getClassLoader().getResourceAsStream(strBuildProfile);
         try {
             properties.load(inputStream);
-            logger.info("Load Properties", strBuildProfile + ": Loaded Successfully.");
+            logger.info("Load Properties " + strBuildProfile + ": Loaded Successfully.");
         } catch (IOException e) {
             Assert.fail("Failed to load" + strBuildProfile);
         }

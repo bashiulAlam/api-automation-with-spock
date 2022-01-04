@@ -1,6 +1,5 @@
 package com.assignment.endtoendtest.specification
 
-
 import com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper
 import com.assignment.endtoendtest.utils.Utils
 import groovy.json.JsonOutput
@@ -15,6 +14,7 @@ import org.slf4j.LoggerFactory
 import spock.lang.Ignore
 import spock.lang.Specification
 import spock.lang.Unroll
+import jodd.json.*
 
 class APITestSpec extends Specification {
     private static Logger logger = LoggerFactory.getLogger(APITestSpec.class)
@@ -44,7 +44,8 @@ class APITestSpec extends Specification {
         Connection.Response response = GoogleApiRequestHelper.getDirections(destination, origin) as Connection.Response
         Document document = response.parse()
         logger.info("Response data : " + document.toString())
-        logger.info("Json body data : " + JsonOutput.toJson(document.body().text()))
+        //logger.info("Json body data : " + JsonOutput.toJson(document.body().text()))
+        logger.info("Json body data : " + JsonSerializer.create().serialize(document.body().text()))
         logger.info("Status code : " + response.statusCode())
 
         then: "We receive a response"
@@ -69,10 +70,12 @@ class APITestSpec extends Specification {
         Connection.Response response = GoogleApiRequestHelper.getPlaceFromText(place) as Connection.Response
         Document document = response.parse()
         logger.info("Response data : " + document.toString())
-        logger.info("Json body data : " + JsonOutput.toJson(document.body().text()))
+//        logger.info("Json body data : " + JsonOutput.toJson(document.body().text()))
+        logger.info("Json body data : " + JsonSerializer.create().serialize(document.body().text()))
         logger.info("Status code : " + response.statusCode())
 
-        def jsonBody = jsonSlurper.parseText(document.body().text())
+//        def jsonBody = jsonSlurper.parseText(document.body().text())
+        def jsonBody = JsonParser.create().parse(document.body().text())
         logger.info("status : " + jsonBody.status)
 
         then: "We receive a response"

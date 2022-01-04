@@ -23,25 +23,25 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">3</div>
+<div class="counter">14</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">2</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">2</div>
+<div class="counter">0</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.618s</div>
+<div class="counter">2.846s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox skipped" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">85%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,37 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="(003) Get Directions"></a>
+<h3 class="failures">(003) Get Directions</h3>
+<span class="code">
+<pre>java.lang.NullPointerException: Cannot invoke method parse() on null object
+	at com.assignment.endtoendtest.specification.APITestSpec.(#scenarioSerial) Get Directions(APITestSpec.groovy:45)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="(014) Geolocate"></a>
+<h3 class="failures">(014) Geolocate</h3>
+<span class="code">
+<pre>java.lang.NullPointerException: Cannot invoke method statusCode() on null object
+	at com.assignment.endtoendtest.specification.APITestSpec.(#scenarioSerial) Geolocate(APITestSpec.groovy:100)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -78,43 +102,286 @@
 </tr>
 </thead>
 <tr>
-<td class="skipped">(#scenarioSerial) Geolocate</td>
-<td class="skipped">-</td>
-<td class="skipped">ignored</td>
-</tr>
-<tr>
-<td class="skipped">(#scenarioSerial) Get Directions</td>
-<td class="skipped">-</td>
-<td class="skipped">ignored</td>
-</tr>
-<tr>
-<td class="success">(001) Get Place From Text</td>
-<td class="success">1.618s</td>
+<td class="success">(001) Get Directions</td>
+<td class="success">0.475s</td>
 <td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(002) Get Directions</td>
+<td class="success">0.195s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">(003) Get Directions</td>
+<td class="failures">0.189s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">(004) Get Directions</td>
+<td class="success">0.188s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(005) Get Directions</td>
+<td class="success">0.180s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(006) Get Directions</td>
+<td class="success">0.185s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(007) Get Directions</td>
+<td class="success">0.180s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(008) Get Place From Text</td>
+<td class="success">0.181s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(009) Get Place From Text</td>
+<td class="success">0.180s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(010) Get Place From Text</td>
+<td class="success">0.182s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(011) Get Place From Text</td>
+<td class="success">0.178s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(012) Get Place From Text</td>
+<td class="success">0.181s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">(013) Get Place From Text</td>
+<td class="success">0.179s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">(014) Geolocate</td>
+<td class="failures">0.173s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2021-11-07 15:32:07,132 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Setup Spec method executed... 
-2021-11-07 15:32:07,158 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+<pre>2022-01-04 15:54:24,821 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Setup Spec method executed... 
+2022-01-04 15:54:24,830 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
 
-============================== Scenario - (001) Get Place From Text ==============================
+============================== Scenario - (001) Get Directions ==============================
  
-2021-11-07 15:32:07,174 [Test worker] INFO  com.assignment.endtoendtest.configuration.Configuration -  Load Properties 
-2021-11-07 15:32:07,381 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
-Request URL: https://maps.googleapis.com/maps/api/place/findplacefromtext/json
-Request data : {&quot;key&quot;:&quot;AIzaSyAN1hR5ma5FORlM1Paz4pDYbFtSgRjz2z4&quot;,&quot;input&quot;:&quot;SARA M Square&quot;,&quot;inputtype&quot;:&quot;textquery&quot;,&quot;fields&quot;:&quot;formatted_address,name&quot;} 
-2021-11-07 15:32:08,754 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
+2022-01-04 15:54:24,835 [Test worker] INFO  com.assignment.endtoendtest.configuration.Configuration -  Load Properties config.properties: Loaded Successfully. 
+2022-01-04 15:54:24,919 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/directions/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;destination&quot;:&quot;Victoria, BC&quot;,&quot;origin&quot;:&quot;Vancouver, BC&quot;} 
+2022-01-04 15:54:25,300 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  { &quot;candidates&quot; : [ { &quot;formatted_address&quot; : &quot;House # 55/2 &amp;amp; 58, Rd No. 2, ???? 1207, ????????&quot;, &quot;name&quot; : &quot;???? ?? ???????&quot; } ], &quot;status&quot; : &quot;OK&quot; } 
+  { &quot;error_message&quot; : &quot;The provided API key is invalid.&quot;, &quot;routes&quot; : [], &quot;status&quot; : &quot;REQUEST_DENIED&quot; } 
  &lt;/body&gt;
 &lt;/html&gt; 
-2021-11-07 15:32:08,758 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;candidates\&quot; : [ { \&quot;formatted_address\&quot; : \&quot;House # 55/2 &amp; 58, Rd No. 2, \u09a2\u09be\u0995\u09be 1207, \u09ac\u09be\u0982\u09b2\u09be\u09a6\u09c7\u09b6\&quot;, \&quot;name\&quot; : \&quot;\u09b8\u09be\u09b0\u09be \u098f\u09ae \u09b8\u09cd\u0995\u09af\u09bc\u09be\u09b0\&quot; } ], \&quot;status\&quot; : \&quot;OK\&quot; }&quot; 
-2021-11-07 15:32:08,759 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
-2021-11-07 15:32:08,767 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  status : OK 
+2022-01-04 15:54:25,301 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;, \&quot;routes\&quot; : [], \&quot;status\&quot; : \&quot;REQUEST_DENIED\&quot; }&quot; 
+2022-01-04 15:54:25,302 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
+2022-01-04 15:54:25,305 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (002) Get Directions ==============================
+ 
+2022-01-04 15:54:25,305 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/directions/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;destination&quot;:&quot;38.5, -75&quot;,&quot;origin&quot;:&quot;38.8951, -77.0364&quot;} 
+2022-01-04 15:54:25,500 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  { &quot;error_message&quot; : &quot;The provided API key is invalid.&quot;, &quot;routes&quot; : [], &quot;status&quot; : &quot;REQUEST_DENIED&quot; } 
+ &lt;/body&gt;
+&lt;/html&gt; 
+2022-01-04 15:54:25,500 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;, \&quot;routes\&quot; : [], \&quot;status\&quot; : \&quot;REQUEST_DENIED\&quot; }&quot; 
+2022-01-04 15:54:25,500 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
+2022-01-04 15:54:25,501 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (003) Get Directions ==============================
+ 
+2022-01-04 15:54:25,502 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/directions/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;destination&quot;:&quot;ChIJgWsCh7C4VTcRwgRZ3btjpY8&quot;,&quot;origin&quot;:&quot;ChIJMdA4aqnv-zkREPTWDpU6-RA&quot;} 
+2022-01-04 15:54:25,687 [Test worker] ERROR com.assignment.endtoendtest.specification.APITestSpec -  Exception occurred : HTTP error fetching URL. Status=400, URL=[https://maps.googleapis.com/maps/api/directions/json?key=key&amp;destination=ChIJgWsCh7C4VTcRwgRZ3btjpY8&amp;origin=ChIJMdA4aqnv-zkREPTWDpU6-RA]
+Stack trace for the exception: [org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:890), org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:829), org.jsoup.helper.HttpConnection.execute(HttpConnection.java:366), org.jsoup.Connection$execute$2.call(Unknown Source), com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper.getDirections(GoogleApiRequestHelper.groovy:38), com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper$getDirections.call(Unknown Source), com.assignment.endtoendtest.specification.APITestSpec.$spock_feature_0_0(APITestSpec.groovy:44), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64), java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.base/java.lang.reflect.Method.invoke(Method.java:564), org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:153), org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:84), org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:480), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:463), org.spockframework.runtime.BaseSpecRunner.runFeatureMethod(BaseSpecRunner.java:405), org.spockframework.runtime.BaseSpecRunner.doRunIteration(BaseSpecRunner.java:324), org.spockframework.runtime.BaseSpecRunner$6.invoke(BaseSpecRunner.java:309), org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:88), org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37), org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55), org.spockframework.runtime.extension.builtin.TestRuleInterceptor.intercept(TestRuleInterceptor.java:38), org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:87), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:471), org.spockframework.runtime.BaseSpecRunner.runIteration(BaseSpecRunner.java:288), org.spockframework.runtime.BaseSpecRunner.initializeAndRunIteration(BaseSpecRunner.java:278), org.spockframework.runtime.ParameterizedSpecRunner.runIterations(ParameterizedSpecRunner.java:119), org.spockframework.runtime.ParameterizedSpecRunner.runParameterizedFeature(ParameterizedSpecRunner.java:43), org.spockframework.runtime.BaseSpecRunner.doRunFeature(BaseSpecRunner.java:262), org.spockframework.runtime.BaseSpecRunner$5.invoke(BaseSpecRunner.java:246), org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:480), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:463), org.spockframework.runtime.BaseSpecRunner.runFeature(BaseSpecRunner.java:238), org.spockframework.runtime.BaseSpecRunner.runFeatures(BaseSpecRunner.java:188), org.spockframework.runtime.BaseSpecRunner.doRunSpec(BaseSpecRunner.java:98), org.spockframework.runtime.BaseSpecRunner$1.invoke(BaseSpecRunner.java:84), org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:480), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:463), org.spockframework.runtime.BaseSpecRunner.runSpec(BaseSpecRunner.java:76), org.spockframework.runtime.BaseSpecRunner.run(BaseSpecRunner.java:67), org.spockframework.runtime.Sputnik.run(Sputnik.java:63), org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110), org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58), org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38), org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62), org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64), java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.base/java.lang.reflect.Method.invoke(Method.java:564), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24), org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33), org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94), com.sun.proxy.$Proxy2.processTestClass(Unknown Source), org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64), java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.base/java.lang.reflect.Method.invoke(Method.java:564), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24), org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182), org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164), org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414), org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64), org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48), java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130), java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630), org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56), java.base/java.lang.Thread.run(Thread.java:832)] 
+2022-01-04 15:54:25,690 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (004) Get Directions ==============================
+ 
+2022-01-04 15:54:25,691 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/directions/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;destination&quot;:&quot;QCF8+7C Dhaka&quot;,&quot;origin&quot;:&quot;Q965+G4 Dhaka&quot;} 
+2022-01-04 15:54:25,878 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  { &quot;error_message&quot; : &quot;The provided API key is invalid.&quot;, &quot;routes&quot; : [], &quot;status&quot; : &quot;REQUEST_DENIED&quot; } 
+ &lt;/body&gt;
+&lt;/html&gt; 
+2022-01-04 15:54:25,878 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;, \&quot;routes\&quot; : [], \&quot;status\&quot; : \&quot;REQUEST_DENIED\&quot; }&quot; 
+2022-01-04 15:54:25,878 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
+2022-01-04 15:54:25,879 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (005) Get Directions ==============================
+ 
+2022-01-04 15:54:25,879 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/directions/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;destination&quot;:&quot;QCF8+7C Dhaka&quot;,&quot;origin&quot;:&quot;SARA M Square&quot;} 
+2022-01-04 15:54:26,058 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  { &quot;error_message&quot; : &quot;The provided API key is invalid.&quot;, &quot;routes&quot; : [], &quot;status&quot; : &quot;REQUEST_DENIED&quot; } 
+ &lt;/body&gt;
+&lt;/html&gt; 
+2022-01-04 15:54:26,058 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;, \&quot;routes\&quot; : [], \&quot;status\&quot; : \&quot;REQUEST_DENIED\&quot; }&quot; 
+2022-01-04 15:54:26,058 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
+2022-01-04 15:54:26,059 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (006) Get Directions ==============================
+ 
+2022-01-04 15:54:26,059 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/directions/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;destination&quot;:&quot;Victoria, BC&quot;,&quot;origin&quot;:&quot;SARA M Square&quot;} 
+2022-01-04 15:54:26,243 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  { &quot;error_message&quot; : &quot;The provided API key is invalid.&quot;, &quot;routes&quot; : [], &quot;status&quot; : &quot;REQUEST_DENIED&quot; } 
+ &lt;/body&gt;
+&lt;/html&gt; 
+2022-01-04 15:54:26,244 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;, \&quot;routes\&quot; : [], \&quot;status\&quot; : \&quot;REQUEST_DENIED\&quot; }&quot; 
+2022-01-04 15:54:26,244 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
+2022-01-04 15:54:26,244 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (007) Get Directions ==============================
+ 
+2022-01-04 15:54:26,244 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/directions/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;destination&quot;:&quot;38.5, -75&quot;,&quot;origin&quot;:&quot;SARA M Square&quot;} 
+2022-01-04 15:54:26,424 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  { &quot;error_message&quot; : &quot;The provided API key is invalid.&quot;, &quot;routes&quot; : [], &quot;status&quot; : &quot;REQUEST_DENIED&quot; } 
+ &lt;/body&gt;
+&lt;/html&gt; 
+2022-01-04 15:54:26,424 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;, \&quot;routes\&quot; : [], \&quot;status\&quot; : \&quot;REQUEST_DENIED\&quot; }&quot; 
+2022-01-04 15:54:26,424 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
+2022-01-04 15:54:26,426 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (008) Get Place From Text ==============================
+ 
+2022-01-04 15:54:26,427 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/place/findplacefromtext/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;input&quot;:&quot;SARA M Square&quot;,&quot;inputtype&quot;:&quot;textquery&quot;,&quot;fields&quot;:&quot;formatted_address,name&quot;} 
+2022-01-04 15:54:26,602 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  { &quot;candidates&quot; : [], &quot;error_message&quot; : &quot;The provided API key is invalid.&quot;, &quot;status&quot; : &quot;REQUEST_DENIED&quot; } 
+ &lt;/body&gt;
+&lt;/html&gt; 
+2022-01-04 15:54:26,603 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;candidates\&quot; : [], \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;, \&quot;status\&quot; : \&quot;REQUEST_DENIED\&quot; }&quot; 
+2022-01-04 15:54:26,603 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
+2022-01-04 15:54:26,607 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  status : REQUEST_DENIED 
+2022-01-04 15:54:26,608 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (009) Get Place From Text ==============================
+ 
+2022-01-04 15:54:26,608 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/place/findplacefromtext/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;input&quot;:&quot;Q965+G4 Dhaka&quot;,&quot;inputtype&quot;:&quot;textquery&quot;,&quot;fields&quot;:&quot;formatted_address,name&quot;} 
+2022-01-04 15:54:26,787 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  { &quot;candidates&quot; : [], &quot;error_message&quot; : &quot;The provided API key is invalid.&quot;, &quot;status&quot; : &quot;REQUEST_DENIED&quot; } 
+ &lt;/body&gt;
+&lt;/html&gt; 
+2022-01-04 15:54:26,787 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;candidates\&quot; : [], \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;, \&quot;status\&quot; : \&quot;REQUEST_DENIED\&quot; }&quot; 
+2022-01-04 15:54:26,788 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
+2022-01-04 15:54:26,788 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  status : REQUEST_DENIED 
+2022-01-04 15:54:26,788 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (010) Get Place From Text ==============================
+ 
+2022-01-04 15:54:26,788 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/place/findplacefromtext/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;input&quot;:&quot;House # 55/2 &amp; 58, Rd No. 2, Dhaka 1207&quot;,&quot;inputtype&quot;:&quot;textquery&quot;,&quot;fields&quot;:&quot;formatted_address,name&quot;} 
+2022-01-04 15:54:26,969 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  { &quot;candidates&quot; : [], &quot;error_message&quot; : &quot;The provided API key is invalid.&quot;, &quot;status&quot; : &quot;REQUEST_DENIED&quot; } 
+ &lt;/body&gt;
+&lt;/html&gt; 
+2022-01-04 15:54:26,969 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;candidates\&quot; : [], \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;, \&quot;status\&quot; : \&quot;REQUEST_DENIED\&quot; }&quot; 
+2022-01-04 15:54:26,970 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
+2022-01-04 15:54:26,970 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  status : REQUEST_DENIED 
+2022-01-04 15:54:26,971 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (011) Get Place From Text ==============================
+ 
+2022-01-04 15:54:26,971 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/place/findplacefromtext/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;input&quot;:&quot;+8801847214963&quot;,&quot;inputtype&quot;:&quot;textquery&quot;,&quot;fields&quot;:&quot;formatted_address,name&quot;} 
+2022-01-04 15:54:27,147 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  { &quot;candidates&quot; : [], &quot;error_message&quot; : &quot;The provided API key is invalid.&quot;, &quot;status&quot; : &quot;REQUEST_DENIED&quot; } 
+ &lt;/body&gt;
+&lt;/html&gt; 
+2022-01-04 15:54:27,147 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;candidates\&quot; : [], \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;, \&quot;status\&quot; : \&quot;REQUEST_DENIED\&quot; }&quot; 
+2022-01-04 15:54:27,148 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
+2022-01-04 15:54:27,148 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  status : REQUEST_DENIED 
+2022-01-04 15:54:27,148 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (012) Get Place From Text ==============================
+ 
+2022-01-04 15:54:27,149 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/place/findplacefromtext/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;input&quot;:&quot;ChIJMdA4aqnv-zkREPTWDpU6-RA&quot;,&quot;inputtype&quot;:&quot;textquery&quot;,&quot;fields&quot;:&quot;formatted_address,name&quot;} 
+2022-01-04 15:54:27,329 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  { &quot;candidates&quot; : [], &quot;error_message&quot; : &quot;The provided API key is invalid.&quot;, &quot;status&quot; : &quot;REQUEST_DENIED&quot; } 
+ &lt;/body&gt;
+&lt;/html&gt; 
+2022-01-04 15:54:27,329 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;candidates\&quot; : [], \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;, \&quot;status\&quot; : \&quot;REQUEST_DENIED\&quot; }&quot; 
+2022-01-04 15:54:27,329 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
+2022-01-04 15:54:27,329 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  status : REQUEST_DENIED 
+2022-01-04 15:54:27,330 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (013) Get Place From Text ==============================
+ 
+2022-01-04 15:54:27,331 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/maps/api/place/findplacefromtext/json
+Request data : {&quot;key&quot;:&quot;key&quot;,&quot;input&quot;:&quot;+88027911042&quot;,&quot;inputtype&quot;:&quot;textquery&quot;,&quot;fields&quot;:&quot;formatted_address,name&quot;} 
+2022-01-04 15:54:27,508 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Response data : &lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  { &quot;candidates&quot; : [], &quot;error_message&quot; : &quot;The provided API key is invalid.&quot;, &quot;status&quot; : &quot;REQUEST_DENIED&quot; } 
+ &lt;/body&gt;
+&lt;/html&gt; 
+2022-01-04 15:54:27,508 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Json body data : &quot;{ \&quot;candidates\&quot; : [], \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;, \&quot;status\&quot; : \&quot;REQUEST_DENIED\&quot; }&quot; 
+2022-01-04 15:54:27,508 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  Status code : 200 
+2022-01-04 15:54:27,508 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  status : REQUEST_DENIED 
+2022-01-04 15:54:27,510 [Test worker] INFO  com.assignment.endtoendtest.specification.APITestSpec -  
+
+============================== Scenario - (014) Geolocate ==============================
+ 
+2022-01-04 15:54:27,510 [Test worker] INFO  com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper -  
+Request URL: https://maps.googleapis.com/geolocation/v1/geolocate
+Request data : {&quot;considerIp&quot;:&quot;false&quot;,&quot;wifiAccessPoints&quot;:{&quot;macAddress&quot;:&quot;84:d4:7e:09:a5:f1&quot;,&quot;signalStrength&quot;:-43,&quot;signalToNoiseRatio&quot;:0}} 
+2022-01-04 15:54:27,682 [Test worker] ERROR com.assignment.endtoendtest.specification.APITestSpec -  Exception occurred : HTTP error fetching URL. Status=404, URL=[https://maps.googleapis.com/geolocation/v1/geolocate]
+Stack trace for the exception: [org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:890), org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:829), org.jsoup.helper.HttpConnection.execute(HttpConnection.java:366), org.jsoup.Connection$execute$2.call(Unknown Source), org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48), org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113), org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117), com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper.geolocate(GoogleApiRequestHelper.groovy:101), com.assignment.endtoendtest.httprequesthelper.GoogleApiRequestHelper$geolocate$1.call(Unknown Source), org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48), org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113), org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117), com.assignment.endtoendtest.specification.APITestSpec.$spock_feature_0_2(APITestSpec.groovy:99), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64), java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.base/java.lang.reflect.Method.invoke(Method.java:564), org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:153), org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:84), org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:480), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:463), org.spockframework.runtime.BaseSpecRunner.runFeatureMethod(BaseSpecRunner.java:405), org.spockframework.runtime.BaseSpecRunner.doRunIteration(BaseSpecRunner.java:324), org.spockframework.runtime.BaseSpecRunner$6.invoke(BaseSpecRunner.java:309), org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:88), org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37), org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55), org.spockframework.runtime.extension.builtin.TestRuleInterceptor.intercept(TestRuleInterceptor.java:38), org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:87), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:471), org.spockframework.runtime.BaseSpecRunner.runIteration(BaseSpecRunner.java:288), org.spockframework.runtime.BaseSpecRunner.initializeAndRunIteration(BaseSpecRunner.java:278), org.spockframework.runtime.ParameterizedSpecRunner.runIterations(ParameterizedSpecRunner.java:119), org.spockframework.runtime.ParameterizedSpecRunner.runParameterizedFeature(ParameterizedSpecRunner.java:43), org.spockframework.runtime.BaseSpecRunner.doRunFeature(BaseSpecRunner.java:262), org.spockframework.runtime.BaseSpecRunner$5.invoke(BaseSpecRunner.java:246), org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:480), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:463), org.spockframework.runtime.BaseSpecRunner.runFeature(BaseSpecRunner.java:238), org.spockframework.runtime.BaseSpecRunner.runFeatures(BaseSpecRunner.java:188), org.spockframework.runtime.BaseSpecRunner.doRunSpec(BaseSpecRunner.java:98), org.spockframework.runtime.BaseSpecRunner$1.invoke(BaseSpecRunner.java:84), org.spockframework.runtime.BaseSpecRunner.invokeRaw(BaseSpecRunner.java:480), org.spockframework.runtime.BaseSpecRunner.invoke(BaseSpecRunner.java:463), org.spockframework.runtime.BaseSpecRunner.runSpec(BaseSpecRunner.java:76), org.spockframework.runtime.BaseSpecRunner.run(BaseSpecRunner.java:67), org.spockframework.runtime.Sputnik.run(Sputnik.java:63), org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110), org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58), org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38), org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62), org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64), java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.base/java.lang.reflect.Method.invoke(Method.java:564), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24), org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33), org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94), com.sun.proxy.$Proxy2.processTestClass(Unknown Source), org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64), java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.base/java.lang.reflect.Method.invoke(Method.java:564), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36), org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24), org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182), org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164), org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414), org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64), org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48), java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130), java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630), org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56), java.base/java.lang.Thread.run(Thread.java:832)] 
 </pre>
 </span>
 </div>
@@ -126,7 +393,7 @@ Request data : {&quot;key&quot;:&quot;AIzaSyAN1hR5ma5FORlM1Paz4pDYbFtSgRjz2z4&qu
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.1</a> at Nov 7, 2021 3:32:08 PM</p>
+<a href="http://www.gradle.org">Gradle 6.7</a> at Jan 4, 2022, 3:54:27 PM</p>
 </div>
 </div>
 </body>
